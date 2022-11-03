@@ -1,0 +1,17 @@
+name: on pull_request
+
+on:
+  pull_request:
+    branches:
+      - "main"
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  On-pull_request:
+    name: run on pull_request
+    runs-on: ubuntu-20.04
+    steps:
+      - name: on pull_request
+        run: echo "A pull request – also referred to as a merge request – is an event that takes place in software development when a contributor/developer is ready to begin the process of merging new code changes with the main project repository."
